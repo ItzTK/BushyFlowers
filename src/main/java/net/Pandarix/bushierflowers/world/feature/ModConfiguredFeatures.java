@@ -52,7 +52,8 @@ public class ModConfiguredFeatures {
         register(context, GROWN_FLOWER_MEADOW_KEY, Feature.FLOWER,  new RandomPatchFeatureConfig(
                 96, 4, 2,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<>(1, 3), new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0, 0), 1.0F, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0, 0), 1.0F,
-                        List.of(Blocks.TALL_GRASS.getDefaultState(), ModBlocks.GROWN_ALLIUM.getDefaultState(), ModBlocks.GROWN_POPPY.getDefaultState(), ModBlocks.GROWN_AZURE_BLUET.getDefaultState(), ModBlocks.GROWN_DANDELION.getDefaultState(), ModBlocks.GROWN_CORNFLOWER.getDefaultState(), ModBlocks.GROWN_OXEYE_DAISY.getDefaultState(), Blocks.GRASS.getDefaultState()))))));
+                        List.of(Blocks.TALL_GRASS.getDefaultState(), ModBlocks.GROWN_ALLIUM.getDefaultState(), ModBlocks.GROWN_POPPY.getDefaultState(), ModBlocks.GROWN_AZURE_BLUET.getDefaultState(), ModBlocks.GROWN_DANDELION.getDefaultState(), ModBlocks.GROWN_CORNFLOWER.getDefaultState(),
+                                ModBlocks.GROWN_OXEYE_DAISY.getDefaultState(), Blocks.SHORT_GRASS.getDefaultState()))))));
     }
 
     //--------------------------------------------------------------------------------------------------------------------------------------------------

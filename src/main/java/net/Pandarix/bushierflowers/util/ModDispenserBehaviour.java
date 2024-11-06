@@ -36,8 +36,8 @@ public class ModDispenserBehaviour {
 
                 //help variables
                 this.setSuccess(true);
-                World world = pointer.getWorld();
-                BlockPos blockPos = pointer.getPos().offset((Direction) pointer.getBlockState().get(DispenserBlock.FACING));
+                World world = pointer.world();
+                BlockPos blockPos = pointer.pos().offset((Direction) pointer.state().get(DispenserBlock.FACING));
                 Block block = world.getBlockState(blockPos).getBlock();
 
                 //behaviour for when it bonemeals a vanilla flower---------------------------------------------------------------------------------
