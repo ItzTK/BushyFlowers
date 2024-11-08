@@ -4,7 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.WitherRoseBlock;
+import net.minecraft.component.type.SuspiciousStewEffectsComponent;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -17,7 +19,7 @@ public class GrowableWitherRose extends WitherRoseBlock {
     private static final VoxelShape SHAPE = Block.createCuboidShape(3, 0, 3, 13, 10, 13);
 
     public GrowableWitherRose(Settings settings) {
-        super(List.of(new StewEffect(StatusEffects.WITHER, 40)), settings);
+        super(new SuspiciousStewEffectsComponent(List.of(new SuspiciousStewEffectsComponent.StewEffect(StatusEffects.WITHER, 40))), settings);
     }
 
     @Deprecated

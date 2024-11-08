@@ -5,6 +5,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -14,7 +15,7 @@ public class GrowableFlower extends FlowerBlock {
     This is the base class of all Growable Flowers in this Mod. This ensures that the Block behaves correctly.
      */
 
-    public GrowableFlower(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
+    public GrowableFlower(RegistryEntry<StatusEffect> suspiciousStewEffect, int effectDuration, Settings settings) {
         super(suspiciousStewEffect, effectDuration, settings);
     }
 

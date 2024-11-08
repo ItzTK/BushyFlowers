@@ -16,7 +16,7 @@ public class ModItemGroup {
     /*Gets called in onInitialize before the Item-Registration
     Creates FabricItemGroup with an ItemStack as a Symbol
     The Name of the Tab is located in the .lang file under "itemGroup.betterarcheology"*/
-    public static final RegistryKey<ItemGroup> BUSHIER_FLOWERS = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(BushierFlowers.MOD_ID, "bushier_flowers"));
+    public static final RegistryKey<ItemGroup> BUSHIER_FLOWERS = RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(BushierFlowers.MOD_ID, "bushier_flowers"));
 
     public static void registerTab() {
         Registry.register(Registries.ITEM_GROUP, BUSHIER_FLOWERS, FabricItemGroup.builder().displayName(Text.translatable("itemGroup." + BushierFlowers.MOD_ID)).icon(() -> new ItemStack(ModBlocks.GROWN_ALLIUM.asItem())).entries((context, entries) -> {
